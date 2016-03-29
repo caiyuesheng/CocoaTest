@@ -5,13 +5,19 @@
 
 target 'CocoaTest' do
 
+pod 'AFNetworking'
+
 end
 
 target 'CocoaTestTests' do
 
+pod 'AFNetworking'
+
 end
 
 target 'CocoaTestUITests' do
+
+pod 'AFNetworking'
 
 end
 
