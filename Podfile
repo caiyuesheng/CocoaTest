@@ -6,18 +6,21 @@
 target 'CocoaTest' do
 
 pod 'AFNetworking'
+pod 'SDWebImage'
 
 end
 
 target 'CocoaTestTests' do
 
 pod 'AFNetworking'
+pod 'SDWebImage'
 
 end
 
 target 'CocoaTestUITests' do
 
 pod 'AFNetworking'
+pod 'SDWebImage'
 
 end
 
