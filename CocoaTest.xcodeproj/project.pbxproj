@@ -15,11 +15,15 @@
 		881875301CA14AF900405129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8818752E1CA14AF900405129 /* LaunchScreen.storyboard */; };
 		8818753B1CA14AF900405129 /* CocoaTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818753A1CA14AF900405129 /* CocoaTestTests.m */; };
 		881875461CA14AF900405129 /* CocoaTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881875451CA14AF900405129 /* CocoaTestUITests.m */; };
-		88893DBD1CA23B580000C89F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88893DBC1CA23B580000C89F /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		88893DBF1CA23BFB0000C89F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88893DBE1CA23BFB0000C89F /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
-		88893DC31CA26B100000C89F /* AVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88893DC21CA26B100000C89F /* AVCaptureViewController.m */; settings = {ASSET_TAGS = (); }; };
-		88893DC61CA276A30000C89F /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 88893DC51CA276A30000C89F /* AFAppDotNetAPIClient.m */; settings = {ASSET_TAGS = (); }; };
-		88C557861CA38D7C00133F4A /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C557851CA38D7C00133F4A /* ImageUtils.m */; settings = {ASSET_TAGS = (); }; };
+		88681FCF1CAE2205007A73E0 /* HMPageScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 88681FCE1CAE2205007A73E0 /* HMPageScroll.m */; };
+		88681FD31CAE22D6007A73E0 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 88681FD21CAE22D6007A73E0 /* UIView+Additions.m */; };
+		88681FD61CAE7150007A73E0 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88681FD51CAE7150007A73E0 /* ScrollViewController.m */; };
+		88893DBD1CA23B580000C89F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88893DBC1CA23B580000C89F /* ViewController.xib */; };
+		88893DBF1CA23BFB0000C89F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88893DBE1CA23BFB0000C89F /* Default-568h@2x.png */; };
+		88893DC31CA26B100000C89F /* AVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88893DC21CA26B100000C89F /* AVCaptureViewController.m */; };
+		88893DC61CA276A30000C89F /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 88893DC51CA276A30000C89F /* AFAppDotNetAPIClient.m */; };
+		88BEE9051CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEE9041CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m */; };
+		88C557861CA38D7C00133F4A /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C557851CA38D7C00133F4A /* ImageUtils.m */; };
 		8D1FF7C9E5C115AD3523311A /* libPods-CocoaTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B688A4D42F6DABEAB00E62E /* libPods-CocoaTestTests.a */; };
 		DE492C7DDFA4D18F6C279FAC /* libPods-CocoaTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDFAC65E1B848C7D57C9CD1 /* libPods-CocoaTestUITests.a */; };
 /* End PBXBuildFile section */
@@ -62,12 +66,20 @@
 		881875411CA14AF900405129 /* CocoaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		881875451CA14AF900405129 /* CocoaTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaTestUITests.m; sourceTree = "<group>"; };
 		881875471CA14AF900405129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88681FCD1CAE2205007A73E0 /* HMPageScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPageScroll.h; sourceTree = "<group>"; };
+		88681FCE1CAE2205007A73E0 /* HMPageScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPageScroll.m; sourceTree = "<group>"; };
+		88681FD11CAE22D6007A73E0 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		88681FD21CAE22D6007A73E0 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		88681FD41CAE7150007A73E0 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		88681FD51CAE7150007A73E0 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		88893DBC1CA23B580000C89F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		88893DBE1CA23BFB0000C89F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		88893DC11CA26B100000C89F /* AVCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureViewController.h; sourceTree = "<group>"; };
 		88893DC21CA26B100000C89F /* AVCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureViewController.m; sourceTree = "<group>"; };
 		88893DC41CA276A30000C89F /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
 		88893DC51CA276A30000C89F /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		88BEE9031CAA45AE00560A21 /* CreatQRCodeAndBarCodeFromLeon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatQRCodeAndBarCodeFromLeon.h; sourceTree = "<group>"; };
+		88BEE9041CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatQRCodeAndBarCodeFromLeon.m; sourceTree = "<group>"; };
 		88C557841CA38D7C00133F4A /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
 		88C557851CA38D7C00133F4A /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
 		8B688A4D42F6DABEAB00E62E /* libPods-CocoaTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				88893DBB1CA239710000C89F /* Utils */,
+				88681FD01CAE22D6007A73E0 /* Additions */,
+				88681FCC1CAE2205007A73E0 /* Views */,
 				88893DC01CA26AE30000C89F /* ViewControllers */,
 				881875231CA14AF900405129 /* AppDelegate.h */,
 				881875241CA14AF900405129 /* AppDelegate.m */,
@@ -171,11 +185,31 @@
 			path = CocoaTestUITests;
 			sourceTree = "<group>";
 		};
+		88681FCC1CAE2205007A73E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88681FCD1CAE2205007A73E0 /* HMPageScroll.h */,
+				88681FCE1CAE2205007A73E0 /* HMPageScroll.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88681FD01CAE22D6007A73E0 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				88681FD11CAE22D6007A73E0 /* UIView+Additions.h */,
+				88681FD21CAE22D6007A73E0 /* UIView+Additions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
 		88893DBB1CA239710000C89F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				88893DC41CA276A30000C89F /* AFAppDotNetAPIClient.h */,
 				88893DC51CA276A30000C89F /* AFAppDotNetAPIClient.m */,
+				88BEE9031CAA45AE00560A21 /* CreatQRCodeAndBarCodeFromLeon.h */,
+				88BEE9041CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m */,
 				88C557841CA38D7C00133F4A /* ImageUtils.h */,
 				88C557851CA38D7C00133F4A /* ImageUtils.m */,
 			);
@@ -187,6 +221,8 @@
 			children = (
 				88893DC11CA26B100000C89F /* AVCaptureViewController.h */,
 				88893DC21CA26B100000C89F /* AVCaptureViewController.m */,
+				88681FD41CAE7150007A73E0 /* ScrollViewController.h */,
+				88681FD51CAE7150007A73E0 /* ScrollViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -478,8 +514,12 @@
 			files = (
 				881875281CA14AF900405129 /* ViewController.m in Sources */,
 				881875251CA14AF900405129 /* AppDelegate.m in Sources */,
+				88681FCF1CAE2205007A73E0 /* HMPageScroll.m in Sources */,
+				88681FD31CAE22D6007A73E0 /* UIView+Additions.m in Sources */,
 				88893DC31CA26B100000C89F /* AVCaptureViewController.m in Sources */,
+				88681FD61CAE7150007A73E0 /* ScrollViewController.m in Sources */,
 				88C557861CA38D7C00133F4A /* ImageUtils.m in Sources */,
+				88BEE9051CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				88893DC61CA276A30000C89F /* AFAppDotNetAPIClient.m in Sources */,
 				881875221CA14AF900405129 /* main.m in Sources */,
 			);
@@ -615,6 +655,7 @@
 			baseConfigurationReference = 68BBE9E8D1C39F1D40E74ED9 /* Pods-CocoaTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CocoaTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -630,6 +671,7 @@
 			baseConfigurationReference = A319C93722111000AEA54A0E /* Pods-CocoaTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CocoaTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

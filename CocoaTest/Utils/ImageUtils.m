@@ -14,7 +14,6 @@
     if(image.imageOrientation == UIImageOrientationUp){
         return image;
     }
-    CGSize size = image.size;
     CGFloat scale = image.scale;
     CGAffineTransform transform = CGAffineTransformIdentity;
     
