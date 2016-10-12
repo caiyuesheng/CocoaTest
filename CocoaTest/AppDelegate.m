@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "VideoViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,9 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     ViewController *vc = [ViewController new];
+//    VideoViewController *vc = [VideoViewController new];
+    
+    UINavigationController *navVc = [[UINavigationController alloc]initWithRootViewController:vc];
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = vc;
+    self.window.rootViewController = navVc;
     [self.window makeKeyAndVisible];
     
     return YES;

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		39F9E3FDE9ADD2470321AF1A /* libPods-CocoaTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A231DB0C1F164D73FFF76B1C /* libPods-CocoaTest.a */; };
+		8801BF2E1D139BFC00ED5E82 /* VideoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8801BF2D1D139BFC00ED5E82 /* VideoUtil.m */; };
+		8801BF3A1D13ADDA00ED5E82 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8801BF381D13ADDA00ED5E82 /* VideoViewController.m */; };
+		8801BF3B1D13ADDA00ED5E82 /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8801BF391D13ADDA00ED5E82 /* VideoViewController.xib */; };
+		880DA4AE1D17E46A00225F09 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880DA4AD1D17E46A00225F09 /* RootViewController.m */; };
 		881875221CA14AF900405129 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 881875211CA14AF900405129 /* main.m */; };
 		881875251CA14AF900405129 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 881875241CA14AF900405129 /* AppDelegate.m */; };
 		881875281CA14AF900405129 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881875271CA14AF900405129 /* ViewController.m */; };
@@ -17,13 +21,14 @@
 		881875461CA14AF900405129 /* CocoaTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881875451CA14AF900405129 /* CocoaTestUITests.m */; };
 		88681FCF1CAE2205007A73E0 /* HMPageScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 88681FCE1CAE2205007A73E0 /* HMPageScroll.m */; };
 		88681FD31CAE22D6007A73E0 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 88681FD21CAE22D6007A73E0 /* UIView+Additions.m */; };
-		88681FD61CAE7150007A73E0 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88681FD51CAE7150007A73E0 /* ScrollViewController.m */; };
 		88893DBD1CA23B580000C89F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88893DBC1CA23B580000C89F /* ViewController.xib */; };
 		88893DBF1CA23BFB0000C89F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88893DBE1CA23BFB0000C89F /* Default-568h@2x.png */; };
 		88893DC31CA26B100000C89F /* AVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88893DC21CA26B100000C89F /* AVCaptureViewController.m */; };
 		88893DC61CA276A30000C89F /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 88893DC51CA276A30000C89F /* AFAppDotNetAPIClient.m */; };
+		88A9654A1D127D040046D9A7 /* AVFoundationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A965491D127D040046D9A7 /* AVFoundationView.m */; };
 		88BEE9051CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BEE9041CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m */; };
 		88C557861CA38D7C00133F4A /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C557851CA38D7C00133F4A /* ImageUtils.m */; };
+		88FC95411D1945AD005DE747 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FC95401D1945AD005DE747 /* 1.mp3 */; };
 		8D1FF7C9E5C115AD3523311A /* libPods-CocoaTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B688A4D42F6DABEAB00E62E /* libPods-CocoaTestTests.a */; };
 		DE492C7DDFA4D18F6C279FAC /* libPods-CocoaTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDFAC65E1B848C7D57C9CD1 /* libPods-CocoaTestUITests.a */; };
 /* End PBXBuildFile section */
@@ -51,6 +56,13 @@
 		5EDFAC65E1B848C7D57C9CD1 /* libPods-CocoaTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BBE9E8D1C39F1D40E74ED9 /* Pods-CocoaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaTest/Pods-CocoaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6CF6D830B195E99FFBB6D3AB /* Pods-CocoaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaTestTests/Pods-CocoaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8801BF2C1D139BFC00ED5E82 /* VideoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoUtil.h; sourceTree = "<group>"; };
+		8801BF2D1D139BFC00ED5E82 /* VideoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoUtil.m; sourceTree = "<group>"; wrapsLines = 0; };
+		8801BF371D13ADDA00ED5E82 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		8801BF381D13ADDA00ED5E82 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		8801BF391D13ADDA00ED5E82 /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		880DA4AC1D17E46A00225F09 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		880DA4AD1D17E46A00225F09 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		8818751D1CA14AF900405129 /* CocoaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881875211CA14AF900405129 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		881875231CA14AF900405129 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,18 +82,19 @@
 		88681FCE1CAE2205007A73E0 /* HMPageScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPageScroll.m; sourceTree = "<group>"; };
 		88681FD11CAE22D6007A73E0 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		88681FD21CAE22D6007A73E0 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
-		88681FD41CAE7150007A73E0 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
-		88681FD51CAE7150007A73E0 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		88893DBC1CA23B580000C89F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		88893DBE1CA23BFB0000C89F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		88893DC11CA26B100000C89F /* AVCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureViewController.h; sourceTree = "<group>"; };
 		88893DC21CA26B100000C89F /* AVCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureViewController.m; sourceTree = "<group>"; };
 		88893DC41CA276A30000C89F /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
 		88893DC51CA276A30000C89F /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		88A965481D127D040046D9A7 /* AVFoundationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFoundationView.h; sourceTree = "<group>"; };
+		88A965491D127D040046D9A7 /* AVFoundationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFoundationView.m; sourceTree = "<group>"; };
 		88BEE9031CAA45AE00560A21 /* CreatQRCodeAndBarCodeFromLeon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatQRCodeAndBarCodeFromLeon.h; sourceTree = "<group>"; };
 		88BEE9041CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatQRCodeAndBarCodeFromLeon.m; sourceTree = "<group>"; };
 		88C557841CA38D7C00133F4A /* ImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
 		88C557851CA38D7C00133F4A /* ImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
+		88FC95401D1945AD005DE747 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
 		8B688A4D42F6DABEAB00E62E /* libPods-CocoaTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A231DB0C1F164D73FFF76B1C /* libPods-CocoaTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A319C93722111000AEA54A0E /* Pods-CocoaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaTest/Pods-CocoaTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +154,8 @@
 		8818751F1CA14AF900405129 /* CocoaTest */ = {
 			isa = PBXGroup;
 			children = (
+				88A9654B1D12A2F00046D9A7 /* Resources */,
+				888D74E71CBE1DA90005F696 /* Models */,
 				88893DBB1CA239710000C89F /* Utils */,
 				88681FD01CAE22D6007A73E0 /* Additions */,
 				88681FCC1CAE2205007A73E0 /* Views */,
@@ -150,6 +165,8 @@
 				881875261CA14AF900405129 /* ViewController.h */,
 				881875271CA14AF900405129 /* ViewController.m */,
 				88893DBC1CA23B580000C89F /* ViewController.xib */,
+				880DA4AC1D17E46A00225F09 /* RootViewController.h */,
+				880DA4AD1D17E46A00225F09 /* RootViewController.m */,
 				8818752C1CA14AF900405129 /* Assets.xcassets */,
 				8818752E1CA14AF900405129 /* LaunchScreen.storyboard */,
 				881875311CA14AF900405129 /* Info.plist */,
@@ -190,6 +207,8 @@
 			children = (
 				88681FCD1CAE2205007A73E0 /* HMPageScroll.h */,
 				88681FCE1CAE2205007A73E0 /* HMPageScroll.m */,
+				88A965481D127D040046D9A7 /* AVFoundationView.h */,
+				88A965491D127D040046D9A7 /* AVFoundationView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +231,8 @@
 				88BEE9041CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m */,
 				88C557841CA38D7C00133F4A /* ImageUtils.h */,
 				88C557851CA38D7C00133F4A /* ImageUtils.m */,
+				8801BF2C1D139BFC00ED5E82 /* VideoUtil.h */,
+				8801BF2D1D139BFC00ED5E82 /* VideoUtil.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -221,10 +242,26 @@
 			children = (
 				88893DC11CA26B100000C89F /* AVCaptureViewController.h */,
 				88893DC21CA26B100000C89F /* AVCaptureViewController.m */,
-				88681FD41CAE7150007A73E0 /* ScrollViewController.h */,
-				88681FD51CAE7150007A73E0 /* ScrollViewController.m */,
+				8801BF371D13ADDA00ED5E82 /* VideoViewController.h */,
+				8801BF381D13ADDA00ED5E82 /* VideoViewController.m */,
+				8801BF391D13ADDA00ED5E82 /* VideoViewController.xib */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		888D74E71CBE1DA90005F696 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88A9654B1D12A2F00046D9A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88FC95401D1945AD005DE747 /* 1.mp3 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		BE8DFD67BC24C36D32E13FAC /* Pods */ = {
@@ -325,6 +362,7 @@
 				TargetAttributes = {
 					8818751C1CA14AF900405129 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = B55FVPW37C;
 					};
 					881875351CA14AF900405129 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -361,9 +399,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FC95411D1945AD005DE747 /* 1.mp3 in Resources */,
 				881875301CA14AF900405129 /* LaunchScreen.storyboard in Resources */,
 				88893DBF1CA23BFB0000C89F /* Default-568h@2x.png in Resources */,
 				88893DBD1CA23B580000C89F /* ViewController.xib in Resources */,
+				8801BF3B1D13ADDA00ED5E82 /* VideoViewController.xib in Resources */,
 				8818752D1CA14AF900405129 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,13 +554,16 @@
 			files = (
 				881875281CA14AF900405129 /* ViewController.m in Sources */,
 				881875251CA14AF900405129 /* AppDelegate.m in Sources */,
+				8801BF3A1D13ADDA00ED5E82 /* VideoViewController.m in Sources */,
+				88A9654A1D127D040046D9A7 /* AVFoundationView.m in Sources */,
 				88681FCF1CAE2205007A73E0 /* HMPageScroll.m in Sources */,
 				88681FD31CAE22D6007A73E0 /* UIView+Additions.m in Sources */,
 				88893DC31CA26B100000C89F /* AVCaptureViewController.m in Sources */,
-				88681FD61CAE7150007A73E0 /* ScrollViewController.m in Sources */,
 				88C557861CA38D7C00133F4A /* ImageUtils.m in Sources */,
 				88BEE9051CAA45B500560A21 /* CreatQRCodeAndBarCodeFromLeon.m in Sources */,
 				88893DC61CA276A30000C89F /* AFAppDotNetAPIClient.m in Sources */,
+				880DA4AE1D17E46A00225F09 /* RootViewController.m in Sources */,
+				8801BF2E1D139BFC00ED5E82 /* VideoUtil.m in Sources */,
 				881875221CA14AF900405129 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -657,11 +700,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CocoaTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuesheng.CocoaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -673,11 +718,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CocoaTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuesheng.CocoaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
