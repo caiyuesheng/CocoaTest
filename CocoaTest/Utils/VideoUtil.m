@@ -113,17 +113,17 @@
 
 + (void)videoUrl:(NSURL *)outputFileURL withText:(NSString *)text  completionCallback:(void (^)(NSURL *finalFilePath, NSError *error))completion{
     AVURLAsset* videoAsset = [[AVURLAsset alloc]initWithURL:outputFileURL options:nil];
-    AVMutableComposition* mixComposition = [AVMutableComposition composition];
-    
-    AVMutableCompositionTrack *compositionVideoTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo  preferredTrackID:kCMPersistentTrackID_Invalid];
     AVAssetTrack *clipVideoTrack = [[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
+    AVAssetTrack *clipAudioTrack = [[videoAsset tracksWithMediaType:AVMediaTypeAudio] firstObject];
+    
+    AVMutableComposition* mixComposition = [AVMutableComposition composition];
+    AVMutableCompositionTrack *compositionVideoTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo  preferredTrackID:kCMPersistentTrackID_Invalid];
     [compositionVideoTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, videoAsset.duration)
                                    ofTrack:clipVideoTrack
                                     atTime:kCMTimeZero error:nil];
     [compositionVideoTrack setPreferredTransform:[[[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0] preferredTransform]];
     
     AVMutableCompositionTrack *compositionAudioTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
-    AVAssetTrack *clipAudioTrack = [[videoAsset tracksWithMediaType:AVMediaTypeAudio] firstObject];
     [compositionAudioTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, videoAsset.duration) ofTrack:clipAudioTrack atTime:kCMTimeZero error:nil];
 
     CGSize videoSize=[compositionVideoTrack naturalSize];
@@ -133,7 +133,7 @@
     CATextLayer *titleLayer = [[CATextLayer alloc] init];
     titleLayer.string = @"text in video";
     titleLayer.alignmentMode = kCAAlignmentCenter;
-    titleLayer.bounds = CGRectMake(0, 0, videoSize.width / 2, videoSize.height / 2);
+    titleLayer.bounds = CGRectMake(0, 0, videoSize.width / 2, 24);
     titleLayer.opacity = 1.0;
     
     [animatedTitleLayer addSublayer:titleLayer];
@@ -154,9 +154,11 @@
                                                                                                                            inLayer:parentLayer];
     AVMutableVideoCompositionInstruction *instruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
     instruction.timeRange = CMTimeRangeMake(kCMTimeZero, [mixComposition duration]);
+    
     AVAssetTrack *videoTrack = [[mixComposition tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
     AVMutableVideoCompositionLayerInstruction* layerInstruction = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoTrack];
     instruction.layerInstructions = [NSArray arrayWithObject:layerInstruction];
+    
     videoComp.instructions = [NSArray arrayWithObject: instruction];
     
     NSString *resource = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"mp3"];

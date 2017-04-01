@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "VideoViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "VideoViewController.h"
+#import "VideoMakeViewController.h"
 
 @interface ViewController ()<UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
@@ -21,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = @[@"拍摄"];
+    self.dataSource = @[@"拍摄",@"测试"];
     [self.imgv sd_setImageWithURL:[NSURL URLWithString:@"http://test8093.huami.net.cn/about/"]];
 }
 
@@ -59,6 +60,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(indexPath.row == 0){
         VideoViewController *vc = [VideoViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if(indexPath.row == 1){
+        VideoMakeViewController *vc = [VideoMakeViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

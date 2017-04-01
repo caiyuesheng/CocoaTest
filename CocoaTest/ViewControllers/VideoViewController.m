@@ -151,10 +151,6 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     //根据连接取得设备输出的数据
     if (![self.captureMovieFileOutput isRecording]) {
         self.enableRotation=NO;
-//        //如果支持多任务则则开始多任务
-//        if ([[UIDevice currentDevice] isMultitaskingSupported]) {
-//            self.backgroundTaskIdentifier=[[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:nil];
-//        }
         //预览图层和视频方向保持一致
         captureConnection.videoOrientation=[self.captureVideoPreviewLayer connection].videoOrientation;
         NSString *outputFielPath=[NSTemporaryDirectory() stringByAppendingString:[NSString stringWithFormat:@"%@.mp4", [[NSUUID UUID] UUIDString]]];

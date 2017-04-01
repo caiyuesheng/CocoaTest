@@ -44,6 +44,7 @@
 }
 
 - (void)awakeFromNib{
+    [super awakeFromNib];
     [self initView];
 }
 
@@ -107,12 +108,12 @@
                                                     multiplier:1.0
                                                       constant:10.0]];
     [self.pageView addConstraint:[NSLayoutConstraint constraintWithItem:self.pageView
-                                                     attribute:NSLayoutAttributeHeight
-                                                     relatedBy:NSLayoutRelationEqual
-                                                        toItem:nil
-                                                     attribute:NSLayoutAttributeNotAnAttribute
-                                                    multiplier:1.0
-                                                      constant:3.0]];
+                                                              attribute:NSLayoutAttributeHeight
+                                                              relatedBy:NSLayoutRelationEqual
+                                                                 toItem:nil
+                                                              attribute:NSLayoutAttributeNotAnAttribute
+                                                             multiplier:1.0
+                                                               constant:3.0]];
     
     self.pageViewWidth = [NSLayoutConstraint constraintWithItem:self.pageView
                                                       attribute:NSLayoutAttributeWidth
@@ -227,28 +228,28 @@
         }];
         self.scrollView.contentOffset = CGPointZero;
     }
-
     
-//    [self.pageView updateFrameWidth:MAX(0,[imageUrls count] - 1) * 12 + MAX(0,[imageUrls count]-1) * 8 + 24];
-//    
-//    for (NSInteger i = 0; i<[imageUrls count]; i++) {
-//        UIView*view = [[UIView alloc] initWithFrame:CGRectMake(14 * i, 0.0, 10, 3.0)];
-//        view.tag=i+1;
-//        view.backgroundColor = [UIColor colorWithRed:0xe8/255.0 green:0xe3/255.0 blue:0xe0/255.0 alpha:0.7];
-//        view.translatesAutoresizingMaskIntoConstraints=NO;
-//        view.layer.cornerRadius = CGRectGetHeight(self.pageView.frame) / 2.0;
-//        view.layer.masksToBounds=YES;
-//        [self.pageView addSubview:view];
-//    }
-//    
-//    self.pageViewItemView = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 24, 3)];
-//    self.pageViewItemView.backgroundColor = [UIColor colorWithRed:0xf7/255.0 green:0x49/255.0 blue:0x68/255.0 alpha:1.0];
-//    self.pageViewItemView.tag = 100;
-//    self.pageViewItemView.layer.cornerRadius = CGRectGetHeight(self.pageView.frame) / 2;
-//    self.pageViewItemView.layer.masksToBounds = YES;
-//    [self.pageView addSubview:self.pageViewItemView];
-//    
-//    [self.pageView layoutIfNeeded];
+    
+    //    [self.pageView updateFrameWidth:MAX(0,[imageUrls count] - 1) * 12 + MAX(0,[imageUrls count]-1) * 8 + 24];
+    //
+    //    for (NSInteger i = 0; i<[imageUrls count]; i++) {
+    //        UIView*view = [[UIView alloc] initWithFrame:CGRectMake(14 * i, 0.0, 10, 3.0)];
+    //        view.tag=i+1;
+    //        view.backgroundColor = [UIColor colorWithRed:0xe8/255.0 green:0xe3/255.0 blue:0xe0/255.0 alpha:0.7];
+    //        view.translatesAutoresizingMaskIntoConstraints=NO;
+    //        view.layer.cornerRadius = CGRectGetHeight(self.pageView.frame) / 2.0;
+    //        view.layer.masksToBounds=YES;
+    //        [self.pageView addSubview:view];
+    //    }
+    //
+    //    self.pageViewItemView = [[UIView alloc] initWithFrame:CGRectMake(2, 0, 24, 3)];
+    //    self.pageViewItemView.backgroundColor = [UIColor colorWithRed:0xf7/255.0 green:0x49/255.0 blue:0x68/255.0 alpha:1.0];
+    //    self.pageViewItemView.tag = 100;
+    //    self.pageViewItemView.layer.cornerRadius = CGRectGetHeight(self.pageView.frame) / 2;
+    //    self.pageViewItemView.layer.masksToBounds = YES;
+    //    [self.pageView addSubview:self.pageViewItemView];
+    //
+    //    [self.pageView layoutIfNeeded];
 }
 
 - (UIImageView*)createImageViewAtIndex:(NSInteger)index imageUrl:(NSString *)imageUrl tag:(NSInteger)tag{
@@ -280,19 +281,19 @@
                                                                multiplier:1.0
                                                                  constant:0.0]];
     [self.scrollView addConstraint:[NSLayoutConstraint constraintWithItem:pageView
-                                                                       attribute:NSLayoutAttributeTop
-                                                                       relatedBy:NSLayoutRelationEqual
-                                                                          toItem:self.scrollView
-                                                                       attribute:NSLayoutAttributeTop
-                                                                      multiplier:1.0
-                                                                        constant:0.0]];
+                                                                attribute:NSLayoutAttributeTop
+                                                                relatedBy:NSLayoutRelationEqual
+                                                                   toItem:self.scrollView
+                                                                attribute:NSLayoutAttributeTop
+                                                               multiplier:1.0
+                                                                 constant:0.0]];
     [self.scrollView addConstraint:[NSLayoutConstraint constraintWithItem:pageView
-                                                                       attribute:NSLayoutAttributeBottom
-                                                                       relatedBy:NSLayoutRelationEqual
-                                                                          toItem:self.scrollView
-                                                                       attribute:NSLayoutAttributeBottom
-                                                                      multiplier:1.0
-                                                                        constant:0.0]];
+                                                                attribute:NSLayoutAttributeBottom
+                                                                relatedBy:NSLayoutRelationEqual
+                                                                   toItem:self.scrollView
+                                                                attribute:NSLayoutAttributeBottom
+                                                               multiplier:1.0
+                                                                 constant:0.0]];
     
     if(!leftView){
         [self.scrollView addConstraint:[NSLayoutConstraint constraintWithItem:pageView
@@ -304,21 +305,21 @@
                                                                      constant:0.0]];
     }else{
         [self.scrollView addConstraint:[NSLayoutConstraint constraintWithItem:pageView
-                                                                           attribute:NSLayoutAttributeLeading
-                                                                           relatedBy:NSLayoutRelationEqual
-                                                                              toItem:leftView
-                                                                           attribute:NSLayoutAttributeTrailing
-                                                                          multiplier:1.0
-                                                                            constant:0.0]];
+                                                                    attribute:NSLayoutAttributeLeading
+                                                                    relatedBy:NSLayoutRelationEqual
+                                                                       toItem:leftView
+                                                                    attribute:NSLayoutAttributeTrailing
+                                                                   multiplier:1.0
+                                                                     constant:0.0]];
     }
     if(lastView){
         [self.scrollView addConstraint:[NSLayoutConstraint constraintWithItem:pageView
-                                                                           attribute:NSLayoutAttributeTrailing
-                                                                           relatedBy:NSLayoutRelationEqual
-                                                                              toItem:self.scrollView
-                                                                           attribute:NSLayoutAttributeTrailing
-                                                                          multiplier:1.0
-                                                                            constant:0.0]];
+                                                                    attribute:NSLayoutAttributeTrailing
+                                                                    relatedBy:NSLayoutRelationEqual
+                                                                       toItem:self.scrollView
+                                                                    attribute:NSLayoutAttributeTrailing
+                                                                   multiplier:1.0
+                                                                     constant:0.0]];
     }
 }
 
